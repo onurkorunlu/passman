@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'add-modal',
+    loadChildren: () => import('./add-modal/add-modal.module').then( m => m.AddModalPageModule)
+  },
+  {
+    path: 'decrypt-modal',
+    loadChildren: () => import('./decrypt-modal/decrypt-modal.module').then( m => m.DecryptModalPageModule)
+  },
 ];
 
 @NgModule({

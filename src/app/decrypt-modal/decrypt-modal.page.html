@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{passItem.name}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large" (click)="dismiss()" color="danger">
+        <ion-icon slot="icon-only" color="danger" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="divContent">
+
+    <ion-list>
+
+      <ion-item>
+        <ion-input [(ngModel)]="encPassword" type="password" placeholder="Profil Şifreniz"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <ion-button color="dark" expand="block" fill="clear" (click)="decryptPassword()">
+        Şifreyi Getir
+      </ion-button>
+    </div>
+
+    <div class="password">
+      <ion-input [(ngModel)]="decryptedPassword" type="text" placeholder="Awesome Input"></ion-input>
+    </div>
+
+  </div>
+
+
+
+</ion-content>

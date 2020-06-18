@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Yeni Şifre Ekle</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large" (click)="dismiss()">
+        <ion-icon slot="icon-only" color="danger" name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input [(ngModel)]="name" type="text" placeholder="Ad"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input [(ngModel)]="password" type="password" placeholder="Şifre"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <div padding>
+    <ion-button color="primary" expand="block" fill="clear" (click)="save()">
+      Kaydet
+    </ion-button>
+  </div>
+
+</ion-content>

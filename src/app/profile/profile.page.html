@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profil Oluştur</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input [(ngModel)]="username" type="text" placeholder="Kullanıcı Adı"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input [(ngModel)]="password" type="password" placeholder="Şifre"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <div padding>
+    <ion-button (click)="save()" expand="block" fill="clear">
+      Kaydet
+    </ion-button>
+  </div>
+
+</ion-content>
